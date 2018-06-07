@@ -1,8 +1,8 @@
 # Roman Numerals
 
-#### Epicodus Intro to Programming: Lesson, Date
+#### Epicodus Intro to Programming: Thursday June 7th, 2018
 
-#### By NAME
+#### By Matt Smith & Eric Shull
 
 ## Description
 
@@ -35,13 +35,16 @@
 
 * Bootstrap x.x.x
 * jQuery 3.3.1
+* Javascript
 
 ## Links
 
-*
+* Eric's Repo: (https://github.com/eshull/roman-numerals)
+* Matt's Repo: (https://github.com/MattSmithereens/roman-numerals)
+* Eric's Site: (https://eshull.github.io/roman-numerals/)
 
 ## License
 
 This software is licensed under the MIT license.
 
-Copyright (c) 2018 **Name**
+Copyright (c) 2018 **Eric Shull & Matt Smith**
