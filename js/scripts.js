@@ -32,7 +32,6 @@ var functOnes = function(onesInput) {
   }
 
 };
-console.log(functOnes(8));
 
 var functTens = function(tensInput) {
   if (tensInput === 0) {
@@ -67,7 +66,6 @@ var functTens = function(tensInput) {
   }
 
 };
-console.log(functTens(8));
 
 var functHundreds = function(hundredsInput) {
   if (hundredsInput === 0) {
@@ -103,8 +101,6 @@ var functHundreds = function(hundredsInput) {
 
 };
 
-console.log(functHundreds(2));
-
 var functThousands = function(thousandsInput) {
   if (thousandsInput === 0) {
     return ("");
@@ -124,7 +120,17 @@ var functThousands = function(thousandsInput) {
 
 };
 
-console.log(functThousands(5));
+
+$(document).ready(function(){
+
+
+
+  $("#userInput").submit(function(event) {
+    event.preventDefault();
+    var arabicNumeral = $("#number").val();
+    var splitNumber = arabicNumeral.split("");
+    });
+});
 
 // var functFour
 // var functFivetoEight
