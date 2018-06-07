@@ -1,4 +1,9 @@
 
+var = overall function() {
+
+  var onesInput = splitNumber.pop();
+  var tensInput = splitNumber.pop();
+
 var functOnes = function(onesInput) {
   if (onesInput === 0) {
     alert("zero doesn't exist in Roman Numerals.");
@@ -119,16 +124,18 @@ var functThousands = function(thousandsInput) {
   }
 
 };
+};
+
+
 
 
 $(document).ready(function(){
-
-
 
   $("#userInput").submit(function(event) {
     event.preventDefault();
     var arabicNumeral = $("#number").val();
     var splitNumber = arabicNumeral.split("");
+    overall();
     });
 });
 
