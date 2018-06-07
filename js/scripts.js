@@ -1,6 +1,3 @@
-
-
-
   var functOnes = function(onesInput) {
     if (onesInput === "0") {
       return ("");
@@ -33,7 +30,6 @@
       return ("IX");
     }
 }
-
 
   var functTens = function(tensInput) {
     if (tensInput === undefined) {
@@ -124,21 +120,16 @@
       return ("MMM");
     }
     else {
-      alert("Please enter a number below 3,999");
+      return alert("Please enter a number below 3,999");
     }
-
 };
-
-
-
-
-
-
 
 $(document).ready(function(){
 
   $("#userInput").submit(function(event) {
     event.preventDefault();
+
+    $(".resultsDisplay").hide();
     var arabicNumeral = $("#number").val();
     var splitNumber = arabicNumeral.split("");
     var backendSplitNumber = splitNumber
@@ -154,16 +145,9 @@ $(document).ready(function(){
 
     var output = (thousands + hundreds + tens + ones)
 
-    alert(output);
-    // functTens();
-    // functHundreds();
-    // functThousands();
-    // alert(functOnes);
-    });
+    $(".numberDisplay").text(output);
+    $(".resultsDisplay").show();
 
 
+  });
 });
-
-// var functFour
-// var functFivetoEight
-// var functNine
