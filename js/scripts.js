@@ -1,13 +1,15 @@
 
 var functOnes = function(onesInput) {
-  if (onesInput === 1) {
+  if (onesInput === 0) {
+    alert("zero doesn't exist in Roman Numerals.");
+  }
+  else if (onesInput === 1) {
     return ("I");
   }
   else if (onesInput === 2) {
     return ("II");
   }
   else if (onesInput === 3) {
-    alert("reached");
     return ("III");
   }
   else if(onesInput === 4) {
@@ -32,7 +34,97 @@ var functOnes = function(onesInput) {
 };
 console.log(functOnes(8));
 
+var functTens = function(tensInput) {
+  if (tensInput === 0) {
+    return ("");
+  }
+  else if (tensInput === 1) {
+    return ("X");
+  }
+  else if (tensInput === 2) {
+    return ("XX");
+  }
+  else if (tensInput === 3) {
+    return ("XXX");
+  }
+  else if(tensInput === 4) {
+    return ("XL");
+  }
+  else if(tensInput === 5) {
+    return ("L");
+  }
+  else if(tensInput === 6) {
+    return ("LX");
+  }
+  else if(tensInput === 7) {
+    return ("LXX");
+  }
+  else if(tensInput === 8) {
+    return ("LXXX");
+  }
+  else if(tensInput === 9) {
+    return ("XC");
+  }
 
+};
+console.log(functTens(8));
+
+var functHundreds = function(hundredsInput) {
+  if (hundredsInput === 0) {
+    return ("");
+  }
+  else if (hundredsInput === 1) {
+    return ("C");
+  }
+  else if (hundredsInput === 2) {
+    return ("CC");
+  }
+  else if (hundredsInput === 3) {
+    return ("CCC");
+  }
+  else if(hundredsInput === 4) {
+    return ("CD");
+  }
+  else if(hundredsInput === 5) {
+    return ("D");
+  }
+  else if(hundredsInput === 6) {
+    return ("DC");
+  }
+  else if(hundredsInput === 7) {
+    return ("DCC");
+  }
+  else if(hundredsInput === 8) {
+    return ("DCCC");
+  }
+  else if(hundredsInput === 9) {
+    return ("CM");
+  }
+
+};
+
+console.log(functHundreds(2));
+
+var functThousands = function(thousandsInput) {
+  if (thousandsInput === 0) {
+    return ("");
+  }
+  else if (thousandsInput === 1) {
+    return ("M");
+  }
+  else if (thousandsInput === 2) {
+    return ("MM");
+  }
+  else if (thousandsInput === 3) {
+    return ("MMM");
+  }
+  else if (thousandsInput > 3) {
+    alert("Please enter a number below 3,999");
+  }
+
+};
+
+console.log(functThousands(5));
 
 // var functFour
 // var functFivetoEight
